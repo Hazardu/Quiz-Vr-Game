@@ -1,8 +1,265 @@
 fileFormatVersion: 2
 guid: 41fc2f641ff27d74ea6dc4c9aa93f9be
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Prego
+    100004: Prego.001
+    100006: Prego.002
+    100008: Prego.003
+    100010: Prego.004
+    100012: Prego.005
+    100014: Prego.006
+    100016: Prego.007
+    100018: Prego.008
+    100020: Prego.009
+    100022: Prego.010
+    100024: Prego.011
+    100026: Prego.012
+    100028: Prego.013
+    100030: Prego.014
+    100032: Prego.015
+    100034: Prego.016
+    100036: Prego.017
+    100038: Prego.018
+    100040: Prego.019
+    100042: Prego.020
+    100044: Prego.021
+    100046: Prego.022
+    100048: Prego.023
+    100050: Prego.024
+    100052: Prego.025
+    100054: Prego.026
+    100056: Prego.027
+    100058: Prego.028
+    100060: Prego.029
+    100062: Tabua superior
+    100064: Tabua superior.001
+    100066: Tabua superior.002
+    100068: Tabua superior.003
+    100070: Tabua superior.004
+    100072: Tabua.001
+    100074: Tabua.002
+    100076: Tabuacimacentro
+    100078: Tabuacimadireita
+    100080: Tabuacimadireita.001
+    100082: Tabuacimaesquerda
+    100084: Toco
+    100086: Toco.001
+    100088: Toco.002
+    100090: Toco.003
+    100092: Toco.004
+    100094: Toco.005
+    100096: Toco.006
+    100098: Toco.007
+    100100: Toco.008
+    400000: //RootNode
+    400002: Prego
+    400004: Prego.001
+    400006: Prego.002
+    400008: Prego.003
+    400010: Prego.004
+    400012: Prego.005
+    400014: Prego.006
+    400016: Prego.007
+    400018: Prego.008
+    400020: Prego.009
+    400022: Prego.010
+    400024: Prego.011
+    400026: Prego.012
+    400028: Prego.013
+    400030: Prego.014
+    400032: Prego.015
+    400034: Prego.016
+    400036: Prego.017
+    400038: Prego.018
+    400040: Prego.019
+    400042: Prego.020
+    400044: Prego.021
+    400046: Prego.022
+    400048: Prego.023
+    400050: Prego.024
+    400052: Prego.025
+    400054: Prego.026
+    400056: Prego.027
+    400058: Prego.028
+    400060: Prego.029
+    400062: Tabua superior
+    400064: Tabua superior.001
+    400066: Tabua superior.002
+    400068: Tabua superior.003
+    400070: Tabua superior.004
+    400072: Tabua.001
+    400074: Tabua.002
+    400076: Tabuacimacentro
+    400078: Tabuacimadireita
+    400080: Tabuacimadireita.001
+    400082: Tabuacimaesquerda
+    400084: Toco
+    400086: Toco.001
+    400088: Toco.002
+    400090: Toco.003
+    400092: Toco.004
+    400094: Toco.005
+    400096: Toco.006
+    400098: Toco.007
+    400100: Toco.008
+    2100000: Prego
+    2100002: Tabuasupeiro2
+    2100004: Tabuasuperior
+    2100006: Tabuainferior
+    2100008: Toco
+    2300000: Prego
+    2300002: Prego.001
+    2300004: Prego.002
+    2300006: Prego.003
+    2300008: Prego.004
+    2300010: Prego.005
+    2300012: Prego.006
+    2300014: Prego.007
+    2300016: Prego.008
+    2300018: Prego.009
+    2300020: Prego.010
+    2300022: Prego.011
+    2300024: Prego.012
+    2300026: Prego.013
+    2300028: Prego.014
+    2300030: Prego.015
+    2300032: Prego.016
+    2300034: Prego.017
+    2300036: Prego.018
+    2300038: Prego.019
+    2300040: Prego.020
+    2300042: Prego.021
+    2300044: Prego.022
+    2300046: Prego.023
+    2300048: Prego.024
+    2300050: Prego.025
+    2300052: Prego.026
+    2300054: Prego.027
+    2300056: Prego.028
+    2300058: Prego.029
+    2300060: Tabua superior
+    2300062: Tabua superior.001
+    2300064: Tabua superior.002
+    2300066: Tabua superior.003
+    2300068: Tabua superior.004
+    2300070: Tabua.001
+    2300072: Tabua.002
+    2300074: Tabuacimacentro
+    2300076: Tabuacimadireita
+    2300078: Tabuacimadireita.001
+    2300080: Tabuacimaesquerda
+    2300082: Toco
+    2300084: Toco.001
+    2300086: Toco.002
+    2300088: Toco.003
+    2300090: Toco.004
+    2300092: Toco.005
+    2300094: Toco.006
+    2300096: Toco.007
+    2300098: Toco.008
+    3300000: Prego
+    3300002: Prego.001
+    3300004: Prego.002
+    3300006: Prego.003
+    3300008: Prego.004
+    3300010: Prego.005
+    3300012: Prego.006
+    3300014: Prego.007
+    3300016: Prego.008
+    3300018: Prego.009
+    3300020: Prego.010
+    3300022: Prego.011
+    3300024: Prego.012
+    3300026: Prego.013
+    3300028: Prego.014
+    3300030: Prego.015
+    3300032: Prego.016
+    3300034: Prego.017
+    3300036: Prego.018
+    3300038: Prego.019
+    3300040: Prego.020
+    3300042: Prego.021
+    3300044: Prego.022
+    3300046: Prego.023
+    3300048: Prego.024
+    3300050: Prego.025
+    3300052: Prego.026
+    3300054: Prego.027
+    3300056: Prego.028
+    3300058: Prego.029
+    3300060: Tabua superior
+    3300062: Tabua superior.001
+    3300064: Tabua superior.002
+    3300066: Tabua superior.003
+    3300068: Tabua superior.004
+    3300070: Tabua.001
+    3300072: Tabua.002
+    3300074: Tabuacimacentro
+    3300076: Tabuacimadireita
+    3300078: Tabuacimadireita.001
+    3300080: Tabuacimaesquerda
+    3300082: Toco
+    3300084: Toco.001
+    3300086: Toco.002
+    3300088: Toco.003
+    3300090: Toco.004
+    3300092: Toco.005
+    3300094: Toco.006
+    3300096: Toco.007
+    3300098: Toco.008
+    4300000: Prego.028
+    4300002: Prego.029
+    4300004: Prego.026
+    4300006: Prego.027
+    4300008: Prego.024
+    4300010: Prego.025
+    4300012: Prego.022
+    4300014: Prego.023
+    4300016: Prego.020
+    4300018: Prego.021
+    4300020: Prego.018
+    4300022: Prego.019
+    4300024: Prego.016
+    4300026: Prego.017
+    4300028: Prego.014
+    4300030: Prego.015
+    4300032: Prego.012
+    4300034: Prego.013
+    4300036: Prego.010
+    4300038: Prego.011
+    4300040: Prego.008
+    4300042: Prego.009
+    4300044: Prego.006
+    4300046: Prego.007
+    4300048: Prego.004
+    4300050: Prego.005
+    4300052: Prego.002
+    4300054: Prego.003
+    4300056: Prego
+    4300058: Prego.001
+    4300060: Tabua superior.004
+    4300062: Tabua superior.003
+    4300064: Tabua superior.002
+    4300066: Tabua superior.001
+    4300068: Tabuacimadireita
+    4300070: Tabuacimadireita.001
+    4300072: Tabuacimacentro
+    4300074: Tabua.002
+    4300076: Tabua superior
+    4300078: Toco.006
+    4300080: Toco.008
+    4300082: Toco.007
+    4300084: Tabuacimaesquerda
+    4300086: Tabua.001
+    4300088: Toco.003
+    4300090: Toco.005
+    4300092: Toco.004
+    4300094: Toco
+    4300096: Toco.002
+    4300098: Toco.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,7 +295,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -46,19 +302,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -67,11 +322,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,7 +335,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

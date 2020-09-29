@@ -1,7 +1,7 @@
-﻿using System.Collections;
+﻿#define test
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Grabber : MonoBehaviour
 {
     public static Grabber instance;
@@ -103,7 +103,7 @@ public class Grabber : MonoBehaviour
     {
 
 
-
+#if !test
         if ((!GameManager.EnableGrabbing && !GameManager.EnableRotating )|| grabbed== null) return;
         if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
         {
@@ -173,5 +173,6 @@ public class Grabber : MonoBehaviour
                 grabbed.SendMessage("Release");
             }
         }
+#endif
     }
 }

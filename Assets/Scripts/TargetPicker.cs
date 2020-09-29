@@ -1,16 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Oculus;
-using OculusSampleFramework;
-
 public class TargetPicker : MonoBehaviour
 {
 
 
     public Transform rightHand,leftHand;
-    public ParticleSystem ps;
-    public ParticleSystem HitPs;
+    public ParticleSystem aimLinePS;
+    public ParticleSystem hitObjectPS;
     public MultiView multiView;
     public Grabber grabber;
     public ScanningMeshVFX scanningMeshVFX;
@@ -19,6 +16,11 @@ public class TargetPicker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var a =  Input.GetJoystickNames();
+        foreach (var item in a)
+        {
+            Debug.Log(a);
+        }
     }
 
 
@@ -28,42 +30,28 @@ public class TargetPicker : MonoBehaviour
     {
         if (!GameManager.EnablePicking) return;
 
-        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
-            {
-                ps.Play();
-            }
-            if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
-            {
-
-                CastRay();
-            }
-        
-        //}else if (holding)
-        //{
-        //    if (multiView.target != null)
+        //if (Input..Get(OVRInput.Button.SecondaryIndexTrigger))
         //    {
-        //        multiView.target.position = lcontroller.position;
-        //        multiView.target.rotation = lcontroller.rotation;
-        //        Vector3 vel = OVRInput.GetLocalControllerVelocity(controller).normalized;
-        //        multiView.targetRB.isKinematic = false;
+        //        aimLinePS.Play();
+        //    }
+        //    if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
+        //    {
 
-            //        holding = false;
-            //    }
-            //}
-
+        //        CastRay();
+        //    }
     }
 
     void CastRay()
     {
-        ps.Play();
+        aimLinePS.Play();
         Debug.DrawRay(rightHand.position, rightHand.forward * 10);
         if(Physics.Raycast(rightHand.position,rightHand.forward,out RaycastHit hit, -mask))
         {
             Debug.DrawRay(hit.point, Vector3.up) ;
             if(hit.transform.CompareTag("Interactable"))
             {
-                HitPs.transform.position = hit.point;
-                HitPs.Play();
+                hitObjectPS.transform.position = hit.point;
+                hitObjectPS.Play();
                 var mf = hit.transform.GetComponent<MeshFilter>();
                 scanningMeshVFX.mesh = mf.sharedMesh;
                 scanningMeshVFX.Set();
