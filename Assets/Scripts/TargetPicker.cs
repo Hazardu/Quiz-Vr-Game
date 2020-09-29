@@ -30,15 +30,15 @@ public class TargetPicker : MonoBehaviour
     {
         if (!GameManager.EnablePicking) return;
 
-        //if (Input..Get(OVRInput.Button.SecondaryIndexTrigger))
-        //    {
-        //        aimLinePS.Play();
-        //    }
-        //    if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
-        //    {
+        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        {
+            aimLinePS.Play();
+        }
+        if (OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger))
+        {
 
-        //        CastRay();
-        //    }
+            CastRay();
+        }
     }
 
     void CastRay()

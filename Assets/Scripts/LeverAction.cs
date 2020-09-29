@@ -32,37 +32,36 @@ public class LeverAction : MonoBehaviour
         if (grabber == null)
             grabber = Grabber.instance;
     }
-    //OVRInput.Button btnToTest;
+    OVRInput.Button btnToTest;
     
     bool StillGrabbing()
     {
-        return false;
-        //return OVRInput.Get(btnToTest);
+        return OVRInput.Get(btnToTest);
     }
     void TestGrabbing()
     {
-        //if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
-        //{
-        //    float mag = (interactionTr.position - PlayerHands.right.position).sqrMagnitude;
-        //    if (mag < interaction.innerRange)
-        //    {
-        //        btnToTest = OVRInput.Button.SecondaryHandTrigger;
-        //        Grab(PlayerHands.right);
-        //        return;
-        //    }
-        //}
-        //if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
-        //{
-        //    float mag = (interactionTr.position - PlayerHands.left.position).sqrMagnitude;
+        if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+        {
+            float mag = (interactionTr.position - PlayerHands.right.position).sqrMagnitude;
+            if (mag < interaction.innerRange)
+            {
+                btnToTest = OVRInput.Button.SecondaryHandTrigger;
+                Grab(PlayerHands.right);
+                return;
+            }
+        }
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+        {
+            float mag = (interactionTr.position - PlayerHands.left.position).sqrMagnitude;
 
-        //    if (mag < interaction.innerRange)
-        //    {
-        //        btnToTest = OVRInput.Button.PrimaryHandTrigger;
+            if (mag < interaction.innerRange)
+            {
+                btnToTest = OVRInput.Button.PrimaryHandTrigger;
 
-        //        Grab(PlayerHands.left);
-        //        return;
-        //    }
-        //}
+                Grab(PlayerHands.left);
+                return;
+            }
+        }
     }
 
 

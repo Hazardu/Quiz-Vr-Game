@@ -1,5 +1,4 @@
-﻿#define test
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class Grabber : MonoBehaviour
@@ -40,28 +39,28 @@ public class Grabber : MonoBehaviour
     {
         if (s == side.left)
         {
-           // if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
-           // {
+            if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+            {
                 go.GetComponent<LeverAction>().Grab(leftH);
                 GrabbingLever = true;
                 touchedL = false;
                 touchedR = true;
                 grabbed = go;
-            grabbedLever = null;
-          //  }
+                grabbedLever = null;
+            }
         }
         else if (s == side.right)
         {
-            //if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
-           // {
+            if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+            {
                 go.GetComponent<LeverAction>().Grab(rightH);
                 GrabbingLever = true;
                 grabbed = go;
                 touchedR = true;
                 touchedL = false;
-            grabbedLever = null;
-           // }
-        }
+                grabbedLever = null;
+                }
+            }
     }
 
     public void OnReach(side s)

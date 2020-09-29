@@ -50,9 +50,9 @@ public class PlayerMovement : MonoBehaviour
 
     void GetInput()
     {
-       // var v2 = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-        //v2.Normalize();
-        //x = v2.x;
-        //y = v2.y;
+        var v2 = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+        v2.Normalize();
+        x = v2.x;
+        y = v2.y;
     }
 }
