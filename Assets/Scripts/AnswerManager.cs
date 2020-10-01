@@ -77,11 +77,15 @@ public class AnswerManager : MonoBehaviour
         for (int i = 0; i < size; i++)
         {
             goPool[i].SetActive(true);
-            meshPool.Add(goPool[i].GetComponent<MeshFilter>());
-            if (meshPool[i] == null) Debug.Log("Cant find mesh filter for " + goPool[i].name);
+            var meshFilter = goPool[i].GetComponent<MeshFilter>();
+            if (meshFilter == null) { meshFilter = goPool[i].GetComponentInChildren<MeshFilter>(); }
+            if (meshFilter == null) { Debug.Log("Cant find mesh filter for " + goPool[i].name); }
+            else
+                meshPool.Add(meshFilter);
+
             goPool[i].SetActive(false);
         }
-        Invoke( "SetAnswers",5);
+        //Invoke( "SetAnswers",5);
     }
     void ClearAnswers()
     {

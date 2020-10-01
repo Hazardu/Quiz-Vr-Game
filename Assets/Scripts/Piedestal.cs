@@ -18,7 +18,7 @@ public class Piedestal : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (child == null)
+		if (child == null || !child.gameObject.activeSelf)
 			return;
 		if (childRB == null)
 			childRB = child.GetComponent<Rigidbody>();
